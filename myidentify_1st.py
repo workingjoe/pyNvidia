@@ -13,7 +13,7 @@ import jetson_utils
 # n_net = jetson_inference.detectNet('ssd-mobilenet-v2', threshold=0.5)
 n_net = jetson_inference.imageNet('googlenet')
 
-# cam_0 = jetson_utils.gstCamera(0) # CSI camera
+# cam_0 = jetson_utils.gstCamera('0') # CSI camera
 cam  = jetson_utils.gstCamera(640, 480, '/dev/video2') # USB camera
 
 disp = jetson_utils.glDisplay()
