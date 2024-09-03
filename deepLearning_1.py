@@ -8,6 +8,10 @@
 # look at Hello AI world -- in gethub.com/dusty-nv/jetson-inference
 #
  
+# NOTE: this version uses jetson_utils for gstCamera, textOverlay and display
+# the default gstreamer string is not modified by constructor, so C++ code needs
+# modifying or another method to change 'format options' in my case for FLIP at least
+
 import jetson_inference
 import jetson_utils
 import time
